@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Bus_SignUp"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/splash"
+            android:layout_margin="20dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:textColor="#42588e"
+            android:layout_gravity="center"
+            android:text="UNITED GROUP OF INSTITUTIONS"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/baseline_directions_bus_24"/>
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Sign Up"
+            android:textColor="#42588e"
+            android:textStyle="bold"
+            android:textSize="17dp"
+            />
+    </LinearLayout>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_gravity="center"
+        android:background="@drawable/textinputbg"
+        app:startIconTint="#42588e"
+        app:boxStrokeColor="#42588e"
+        app:startIconDrawable="@drawable/baseline_person_24">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="270dp"
+            android:id="@+id/et_name"
+            android:layout_gravity="center"
+            android:background="@drawable/textinputbg"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="Bus Owner Name" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:startIconTint="#42588e"
+        app:startIconDrawable="@drawable/baseline_security_24"
+        android:layout_gravity="center"
+        android:background="@drawable/textinputbg"
+        app:boxStrokeColor="#42588e">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="270dp"
+            android:id="@+id/et_id"
+            android:layout_gravity="center"
+            android:background="@drawable/textinputbg"
+            android:layout_height="wrap_content"
+            android:hint="Bus Id"
+            android:inputType="text"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:background="@drawable/textinputbg"
+        app:startIconDrawable="@drawable/baseline_password_24"
+        app:passwordToggleEnabled="true"
+        app:startIconTint="#42588e"
+        app:passwordToggleTint="#42588e"
+        app:boxStrokeColor="#42588e">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="270dp"
+            android:inputType="textPassword"
+            android:id="@+id/et_pass"
+            android:background="@drawable/textinputbg"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="Password" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="200dp"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Sign Up"
+        android:backgroundTint="#42588e" />
+
+
+</LinearLayout>
